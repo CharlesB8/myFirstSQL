@@ -1,5 +1,5 @@
 
-delete the entire table
+-- delete the entire table
 DROP TABLE student;
 
 
@@ -17,8 +17,8 @@ id INTEGER PRIMARY KEY,
 title VARCHAR(100)
 );enrollment_ibfk_1
 
-Through/join table
-Foreign Key(attribute in the current table that referncess to the primary key of another table) REFERENCES target a table with primary key
+-- Through/join table
+-- Foreign Key(attribute in the current table that referncess to the primary key of another table) REFERENCES target a table with primary key
 CREATE TABLE enrollment (
 id INTEGER PRIMARY KEY,
 courseId INTEGER,
@@ -27,7 +27,7 @@ FOREIGN KEY (courseId) REFERENCES courses(id),
 FOREIGN KEY (studentId) REFERENCES student(id)
 );
 
-Inserting data into table
+-- Inserting data into table
 
 INSERT INTO student VALUES 
 	(1, "Charles", "Bartels", 22, "Charles@gmail.com"),
